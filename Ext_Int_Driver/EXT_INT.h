@@ -22,14 +22,6 @@
 #define TRIGGER_LOW_LEVEL			0x00
 #define TRIGGER_ANY_LOGICAL_CHANGE	0x01
 
-/****Another possible implementation shall use these macros***
-
-#define INT_0	0
-#define INT_1	1
-#define INT_2	2
-
-********/
-
 void SET_GlobalInterrupt(void);
 
 void ExternalINT0_Init(void);
@@ -39,11 +31,15 @@ void ExternalINT0_Init(void);
 void ExternalINT1_Init(void);
 void ExternalINT2_Init(void);
 
-/*******************************/
 
-/********Another possible implementation*******
+/****Another possible implementation****
+#define INT_0	0
+#define INT_1	1
+#define INT_2	2
+
 void ExternalINT_Init(uint8 EXT_INT_ID);
 ***********************/
 
+/*******************************/
 
 #endif /* EXT_INT_H_ */
